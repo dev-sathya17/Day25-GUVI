@@ -1,0 +1,84 @@
+header > h2 {
+  text-align: center;
+  margin-top: 10%;
+  color: #13ad89;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 55px;
+}
+
+.input-container > input {
+  all: unset;
+  border: 2px solid #13ad89;
+  padding: 7px;
+  padding-left: 9px;
+  border-radius: 5px;
+  color: #13ad89;
+  width: 350px;
+}
+
+.btn {
+  all: unset;
+  border: 2px solid #13ad89;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #13ad89;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  width: 150px;
+  text-align: center;
+}
+
+.status {
+  border: none;
+  outline: none;
+  background-color: #fd807f;
+  color: #fff;
+  padding: 5px;
+}
+
+.todos-container {
+  display: flex;
+  margin: 25px;
+  margin-left: 40px;
+  flex-wrap: wrap;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 75px 0px 75px;
+}
+
+.todo-header > p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.filter {
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 968px) {
+  .input-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .input-container > input {
+    width: 250px;
+  }
+  .todos-container {
+    justify-content: center;
+  }
+  .todo-header {
+    flex-direction: column;
+    margin-left: 140px;
+    gap: 15px;
+  }
+}
